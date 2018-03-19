@@ -1,6 +1,5 @@
 def oxford_comma(array)
-array.count
-array.join()
+return array.count
 end
 
 oxford_comma(["1","2","3"])
