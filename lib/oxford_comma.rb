@@ -4,14 +4,12 @@ def oxford_comma(array)
   elsif array.size == 2
     array.join(" " + "and" + " ")
   else
-     array2 = Array.new
+     comma_count = Array.new
      count = 1
-    array.each do |element| until count == 2
+    array.each do |element| until comma_count == (array.size - 1)
       array2.push(element)
-        if count != 2
-          count += 1
-        else
-        end
+      count += 1
     end
+    array2.join("," + " ") + " and " + array[-1].to_s
   end
 end
