@@ -3,4 +3,4 @@ array.count
 array.join()
 end
 
-oxford_comma("123")
+oxford_comma([1,2,3])
