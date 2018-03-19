@@ -4,6 +4,9 @@ def oxford_comma(array)
   elsif array.size == 2
     array.join(" " + "and" + " ")
   else
-    array.join(" " + "and" + " ")
+     array2 = Array.new
+    array.each do |element|
+      array2.push(element)
+    end
   end
 end
