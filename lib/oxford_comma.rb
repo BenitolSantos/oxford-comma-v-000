@@ -5,8 +5,10 @@ def oxford_comma(array)
     array.join(" " + "and" + " ")
   else
      array2 = Array.new
-    array.each do |element|
+     count = 1 
+    array.each do |element| until count == 2
       array2.push(element)
+      count += 1
     end
   end
 end
