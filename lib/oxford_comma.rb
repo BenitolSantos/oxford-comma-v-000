@@ -6,10 +6,10 @@ def oxford_comma(array)
   else
      comma_count = Array.new
      count = 1
-    array.each do |element| until comma_count == (array.size - 1)
-      array2.push(element)
+    array.each do |element| until count == (array.size - 1)
+      comma_count.push(element)
       count += 1
     end
-    array2.join("," + " ") + " and " + array[-1].to_s
+    comma_count.join("," + " ") + " and " + array[-1].to_s
   end
 end
