@@ -8,10 +8,10 @@ def oxford_comma(array)
      count = 1
     array.each do |element| until count == 2
       array2.push(element)
-      if count != 2
-      count += 1
-      else
-      end
+        if count != 2
+          count += 1
+        else
+        end
     end
   end
 end
